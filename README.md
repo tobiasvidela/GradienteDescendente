@@ -1,5 +1,5 @@
-# Gradiente Descendente
-Gradiente Descendente, uno de los algoritmos más utilizados para entrenar modelos de inteligencia artificial, incluyendo redes neuronales. En pocas palabras, consiste en aplicar el gradiente descendente a una función de costo definida para encontrar los valores óptimos (mínimos locales) para las variables dadas.
+# Agloritmo del Descenso del Gradiente
+También llamado Gradiente Descendente, es uno de los algoritmos más utilizados para entrenar modelos de inteligencia artificial, incluyendo redes neuronales. En pocas palabras, consiste en aplicar el gradiente descendente a una función de costo definida para encontrar los valores óptimos (mínimos locales) para las variables dadas. Es decir, es utilizado para reducir lo más posible el error en un modelo de datos.
 ### Videos de consulta
 1. [¿Qué es el Descenso del Gradiente? Algoritmo de Inteligencia Artificial | DotCSV](https://www.youtube.com/watch?v=A6FiCDoz8_4)
 1. [Descenso de Gradiente. Cómo Aprenden las Redes Neuronales | Aprendizaje Profundo. Capítulo 2](https://www.youtube.com/watch?v=mwHiaTrQOiI)
