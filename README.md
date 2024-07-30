@@ -1,10 +1,16 @@
-# Entrenamiento de Redes Neuronales
-## ALgoritmo de Regresión Lineal
-Funciones No-Convexas
+# Aplicación del Cálculo al Entrenamiento de Redes Neuronales
+## Algoritmo de Regresión Lineal Simple
+*Funciones Convexas*
 
 
+Consiste en definir una función lineal que represente de la mejor manera posible una realidad planteada a partir de los datos porporcionados. Esta recta funciona como modelo para describir y predecir datos.
+Cuando este modelo depende de una sola variable, estamos frente a un *Modelo de Regresión Lineal Simple*. Cuando hay más de una variable en cuestión, nos enfrentamos a un *Modelo de Regresión Lineal Múltiple*, donde ya no es una recta en un plano sino un plano en el espacio (dos variables), o un hiperplano en un espacio multidimensional (3 o más variables).
+
+Utilizando el método de **Mínimos Cuadrados Ordinarios** (MCO), obtenemos (aplicando la ecuación) los valores de los parámetros para los cuales se miniza el error de nuestra función. Encontrando así, un modelo óptimo para los datos.
+
+Debido a que implica el cálculos complejos y costosos (traspuesta, inversa, multiplicación vectorial, etc.), entre otras cosas, encontramos como alternativa al siguiente método o algoritmo.
 ## Algoritmo del Descenso del Gradiente
-Funciones No-Convexas
+*Funciones No-Convexas*
 
 
 También llamado Gradiente Descendente, es uno de los algoritmos más utilizados para entrenar modelos de inteligencia artificial, incluyendo redes neuronales. En pocas palabras, consiste en aplicar el gradiente descendente a una función de costo definida para encontrar los valores óptimos (mínimos locales) para las variables dadas. Es decir, es utilizado para reducir lo más posible el error en un modelo de datos.
