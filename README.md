@@ -9,6 +9,7 @@ Es una técnica de optimización.
 1. [¿Qué es el Descenso del Gradiente? Algoritmo de Inteligencia Artificial | DotCSV](https://www.youtube.com/watch?v=A6FiCDoz8_4)
 1. [Regresión Lineal y Mínimos Cuadrados Ordinarios | DotCSV](https://www.youtube.com/watch?v=k964_uNn3l0)
 1. [Regresión Líneal Simple 📈 En Python 🐍](https://www.youtube.com/watch?v=b7gOUbSmGIY)
+1. [Gradiente Descendente Paso a Paso con Python: Un Algoritmo de Optimización para Machine Learning](https://www.youtube.com/watch?v=FNWbigoQNOk)
 1. [Descenso de Gradiente. Cómo Aprenden las Redes Neuronales | Aprendizaje Profundo. Capítulo 2](https://www.youtube.com/watch?v=mwHiaTrQOiI)
 1. [Implementación del Gradiente Descendiente en Python](https://www.youtube.com/watch?v=GaoUAlDHjOg)
 1. [GRADIENTE DESCENDENTE (PYTHON)](https://www.youtube.com/watch?v=jk53nZxh4mI)
