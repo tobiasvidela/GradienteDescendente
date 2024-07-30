@@ -1,7 +1,15 @@
-# Agloritmo del Descenso del Gradiente
+# Entrenamiento de Redes Neuronales
+## ALgoritmo de Regresión Lineal
+Funciones No-Convexas
+
+
+## Algoritmo del Descenso del Gradiente
+Funciones No-Convexas
+
+
 También llamado Gradiente Descendente, es uno de los algoritmos más utilizados para entrenar modelos de inteligencia artificial, incluyendo redes neuronales. En pocas palabras, consiste en aplicar el gradiente descendente a una función de costo definida para encontrar los valores óptimos (mínimos locales) para las variables dadas. Es decir, es utilizado para reducir lo más posible el error en un modelo de datos.
 Es una técnica de optimización.
-## Conceptos clave
+### Conceptos clave
 - **Función de Coste/Costo**: *función (derivable) que sirve para evaluar el desempeño de un modelo de datos: "mide qué tan bien hace su trabajo la IA en cuestión".*
 - **Ratio de aprendizaje**:
 *Un valor que multiplica al gradiente, que equivale al "tamaño de los pasos" que se da en cada iteración.*
