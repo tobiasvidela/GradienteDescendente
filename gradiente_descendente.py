@@ -11,10 +11,10 @@ func2 = lambda th: np.sin(1/2 * th[0] ** 2 - 1/4 * th[1] ** 2 + 3) * np.cos(2 * 
 
 resolucion = 250
 
-_X = np.linspace(-5, 5, resolucion) # vector de 100 valores
-_Y = np.linspace(-5, 5, resolucion) # vector de 100 valores
+_X = np.linspace(-5, 5, resolucion) # vector de 250 valores
+_Y = np.linspace(-5, 5, resolucion) # vector de 250 valores
 
-_Z = np.zeros((resolucion, resolucion)) # matriz de 100*100 con valores nulos (vacía)
+_Z = np.zeros((resolucion, resolucion)) # matriz de 250*250 con valores nulos (vacía)
 
 # llenar la matriz _Z
 for index_of_x, x_value in enumerate(_X): #enumerate() devuelve el índice del valor y el valor del vector parámetro
@@ -27,7 +27,7 @@ plt.contourf(_X, _Y, _Z, resolucion) # vista sólida
 plt.colorbar()
 
 # Tita
-Tita = np.random.rand(2) * 10 - 5 # Genera dos números en el rango [-2, 2]
+Tita = np.random.rand(2) * 10 - 5 # Genera dos números en el rango [-5, 5]
 print(f'Tita: {Tita}')
 
 plt.plot(Tita[0], Tita[1], "o", c="red") # marcar Tita
