@@ -21,7 +21,7 @@ print(Y)
 plt.scatter(X[Y[:,0] == 0 , 0], X[Y[:,0] == 0 , 1], c='blue')
 plt.scatter(X[Y[:,0] == 1 , 0], X[Y[:,0] == 1 , 1], c='orange')
 plt.axis('equal')
-
+#plt.show()
 # Red neuronal: separar en dos clases diferentes la nube de puntos
 
 # CAPA DE LA RED
@@ -36,7 +36,7 @@ class neuralLayer():
 # función sigmoide (Distorsión del x en un rango de 0 a 1)
 sigmoide = (lambda x: 1 / (1 + np.e ** (-x)), lambda x: x * (1 - x))
 
-relu = lambda x: np.maximum(0, x)
+#relu = lambda x: np.maximum(0, x)
 
 #_x = np.linspace(-5, 5, 100) # vector de 100 valores en el rango [-5, 5]
 #plt.plot(_x, sigmoide[0](_x))
