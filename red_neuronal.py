@@ -85,7 +85,7 @@ def entrenar(red_neuronal, X, Y, f_coste, tasa_aprendizaje = 0.01, entrenando=Tr
 
       _W = red_neuronal[l].W # Vector de parámetros W que conecta la capa actual con la capa anterior
 
-      # Descendo del Gradiente
+      # Descenso del Gradiente
       red_neuronal[l].b = red_neuronal[l].b - np.mean(deltas[0], axis=0, keepdims=True) * tasa_aprendizaje
       red_neuronal[l].W = red_neuronal[l].W - out[l][1].T @ deltas[0] * tasa_aprendizaje
   
