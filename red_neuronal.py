@@ -74,8 +74,8 @@ def entrenar(red_neuronal, X, Y, f_coste, tasa_aprendizaje = 0.01, entrenando=Tr
     deltas = []
 
     for l in reversed(range(0, len(red_neuronal))):
-      z = out[l+1][0]
-      a = out[l+1][1]
+      z = out[l+1][0] # suma ponderada
+      a = out[l+1][1] # activación
       if l == len(red_neuronal) - 1:
         # calcular delta última capa
         deltas.insert(0, f_coste[1](a,Y) * red_neuronal[l].f_activacion[1](a))
@@ -83,7 +83,7 @@ def entrenar(red_neuronal, X, Y, f_coste, tasa_aprendizaje = 0.01, entrenando=Tr
         # calcular delta respecto a capa previa
         deltas.insert(0, deltas[0] @ _W.T * red_neuronal[l].f_activacion[1](a))
 
-      _W = red_neuronal[l].W
+      _W = red_neuronal[l].W # Vector de parámetros W que conecta la capa actual con la capa anterior
 
       # Descendo del Gradiente
       red_neuronal[l].b = red_neuronal[l].b - np.mean(deltas[0], axis=0, keepdims=True) * tasa_aprendizaje
