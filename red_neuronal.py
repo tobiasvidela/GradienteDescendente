@@ -21,7 +21,7 @@ print(Y)
 plt.scatter(X[Y[:,0] == 0 , 0], X[Y[:,0] == 0 , 1], c='blue')
 plt.scatter(X[Y[:,0] == 1 , 0], X[Y[:,0] == 1 , 1], c='orange')
 plt.axis('equal')
-#plt.show()
+# plt.show()
 # Red neuronal: separar en dos clases diferentes la nube de puntos
 
 # CAPA DE LA RED
@@ -79,12 +79,17 @@ def entrenar(red_neuronal, X, Y, f_coste, tasa_aprendizaje = 0.01, entrenando=Tr
       if l == len(red_neuronal) - 1:
         # calcular delta última capa
         deltas.insert(0, f_coste[1](a,Y) * red_neuronal[l].f_activacion[1](a))
+        # derivada parcial de la F_Coste y la derivada parcial de la F_Activación en la última capa
       else:
         # calcular delta respecto a capa previa
         deltas.insert(0, deltas[0] @ _W.T * red_neuronal[l].f_activacion[1](a))
+        # delta capa anterior X vector de pesos W conexiones de la capa 'anterior' a la actual
 
-      _W = red_neuronal[l].W # Vector de parámetros W que conecta la capa actual con la capa anterior
+      _W = red_neuronal[l].W # Vector de parámetros (pesos) W que conecta la capa actual con la capa 'anterior'
 
+      # Primero modificar los pesos y el sesgo con Backpropagation
+      # Luego optimizar los valores
+      
       # Descenso del Gradiente
       red_neuronal[l].b = red_neuronal[l].b - np.mean(deltas[0], axis=0, keepdims=True) * tasa_aprendizaje
       red_neuronal[l].W = red_neuronal[l].W - out[l][1].T @ deltas[0] * tasa_aprendizaje
@@ -97,7 +102,7 @@ errores = []
 for i in range(2500):
   # Entrenar la red
   Yp = entrenar(RN, X, Y, f_coste, tasa_aprendizaje=0.05, entrenando=True)
-  if i % 25 == 0:
+  if i % 100 == 0:
     errores.append(f_coste[0](Yp, Y))
 
     res = 50
